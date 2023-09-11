@@ -1,6 +1,67 @@
-body {
-    background-color: rgb(128, 98, 59);
+html,body {
+    background-color: rgb(238, 234, 227);
+    margin: 0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
+
    }
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
    h2 {
-    color: blueviolet;
+    color: #596ABB;
+    font-weight: 400;
    }
+   p{
+    color:rgb(44, 42, 165)
+   }
+   .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto 1fr;}
+    .brand {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        background-color: #379EA8; 
+        padding: 15px;
+        font-size: 25px;
+        font-weight: bold;
+        }
+         
+    .page-links {
+        grid-column: 3 / span 2;
+        grid-row: 1;
+        text-align: center;
+        padding: 15px;
+        background-color: #379EA8; 
+        }
+    .main {
+            grid-column: 1 / -1;
+            grid-row: 2;
+            width: 75vw;
+            margin: 0 auto;
+            }
+    .menu-button {
+                font-size: 20px;
+                color: white;
+                background-color: #379EA8;
+                padding: 2px 20px;
+                border-style: solid;
+                border-radius: 5px;
+                border-color: white;
+                }
+    .pic{
+        width: 50%;
+        height: 40vh;
+        object-fit: cover;
+        margin: auto;
+    }
+    figcaption{
+        color: grey;
+        font-weight: 100;
+
+
+    }
+                    
