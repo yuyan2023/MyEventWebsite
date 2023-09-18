@@ -39,6 +39,28 @@ h1 {
     text-decoration: none;
     font-weight: 600;
 }
+.text-center {
+    text-align: center;
+}
+.m-2 {
+    margin: 2vh 2vw;
+}
+.mx-2 {
+    margin: 0 2vw;
+}
+.mv-2 {
+    margin: 2vh 0vw;
+}
+.p-2 {
+    margin: 2vh 2vw;
+}
+.px-2 {
+    margin: 0 2vw;
+}
+.py-2 {
+    margin: 2vh 0vw;
+}
+
 .grab-text {
     COLOR: #fff;
     font-weight:200;
