@@ -5,19 +5,34 @@
     --grey: #6C808C;
     --lightgrey: #A4B5BF;
     --bloodred: #730220;
-
+}
+.centered-content {
+    text-align: center;
+    color: white;
+}
+@media only screen and (min-width: 601px) and (max-width: 1194px) {
+    .centered-content > img {
+        width: 15vw;
+    }
 
 }
 
+@media only screen and (min-width: 1195px) {
+    .centered-content > img {
+        width: 10vw;
+    }
+
+}
 html, body {
     margin: 0;
     padding: 0;
 }
 body {
     font-family: 'Manrope', sans-serif;
+    background-color: var(--dark1);
 }
 h1 {
-    color: var(--bloodred)
+    color: var(--bloodred);
 }
 .nav-link {
     color: #fff;
@@ -78,7 +93,7 @@ h1 {
     .flex-side-menu {
         display: grid;
         grid-auto-rows: min-content;
-        justify-items: start;
+        justify-items: center;
         align-items: start;
         gap: 3vh;
         text-align: center;
