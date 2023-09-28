@@ -9,6 +9,7 @@
 .centered-content {
     text-align: center;
     color: white;
+
 }
 @media only screen and (min-width: 601px) and (max-width: 1194px) {
     .centered-content > img {
@@ -74,6 +75,7 @@ h1 {
     font-size: xx-large;
     text-align: center;
 }
+
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -92,18 +94,19 @@ h1 {
 .flex-header-menu {
     display: none;
 }
-.flex.flex-side-menu {
+.flex-side-menu {
     display: none;
 }
 .flex-footer-menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+    align-items: center;
     padding: 2vh 5vw;
     text-align: center;
 }
-.flex-side-menu img {
-    width: 10vw;
+.flex-footer-menu img {
+    width: 15vw;
     height: auto;
     min-width: 24px;
     max-width: 50px;
