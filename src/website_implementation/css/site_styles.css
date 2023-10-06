@@ -1,0 +1,121 @@
+:root {
+    --dark1: #090B0D;
+    --blue: #1606fb;
+    --midgrey: #425059;
+    --grey: #6C808C;
+    --lightgrey: #d8d8d8;
+    --bloodred: #730220;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--lightgrey);
+
+    
+    background-image: url('pow-star.jpg');
+    background-size: cover;  /* This will cover the entire viewport of the header */
+    background-repeat: no-repeat;  /* This will prevent the image from repeating */
+    background-position: center;  /* This will center the background image */
+
+    
+}
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh;
+}
+.flex-header-menu {
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: space-between; /* This will push children elements to the far ends */
+    grid-template-columns: auto 1fr;
+    background-color: #fff;
+    align-items: center;
+    padding: 2vh 5vw;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+
+}
+
+
+.header-name {
+
+    display: flex;
+    align-items: center; /* This ensures that the image and text are vertically aligned in the center. */
+    gap: 20px; 
+    
+}
+.header-name img {
+    margin-left: -50px;
+    width: 50px;
+    height: auto;
+}
+
+
+.header-name a {
+    padding: 0 20px;
+    color: var(--blue);
+    white-space: nowrap;
+    font-size: 30px;
+}
+.header-name a:hover {
+    border-bottom: 1px solid var(--blue);
+}
+
+.header-links a::before{
+    content: "|";
+    margin: 0 0px; 
+    padding: 0 5px;
+}
+
+
+.header-links {
+    margin-left: 150px;
+    display: flex;
+    justify-self: space-between;
+}
+.header-links a {
+    
+    padding: 0 25px;
+    color: var(--dark1);
+    white-space: nowrap;
+    font-size: 20px;
+    
+    
+}
+.header-login {
+
+    display: flex;
+    align-items: center; /* This ensures that the image and text are vertically aligned in the center. */
+    gap: 10px; 
+
+}
+.header-login {
+    color: blue;  /* Font color */
+    font-size: 0.8em;  /* Adjust for desired font size */
+    margin-left: 15px;  /* Space between the individual links */
+    display: flex;
+    align-items: center;  /* Vertically align the icon with the text */
+    text-decoration: none; /* Optional: remove the underline from the link */
+}
+
+.header-login img {
+    
+    margin-right: 5px;  /* Space between the icon and the link text */
+    width: 15px;  /* Adjust to your desired icon size */
+    height: 15px;
+
+}
+
+.header-links a:hover {
+    border-bottom: 2px solid var(--dark1);
+}
