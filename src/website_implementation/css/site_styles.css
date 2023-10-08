@@ -175,9 +175,13 @@ body {
 
 .search-container {
     display: flex;
+    flex-direction: row;
+    min-height: 15vh;
+    margin-top: 5px;
     align-items: center;
-    margin: 40px;
+
     justify-content: center;
+    background-color: rgb(222, 236, 227);
 
 }
 
@@ -192,27 +196,30 @@ body {
 }
 
 .date-container {
+
     display: flex;
-    align-items: center;
-    
+    flex-direction: column;  /* Added to make the content stack vertically */
+    align-items: flex-start; 
+
 }
 
-.calendar-button, .search-button, .reset-button {
-    border: none;
-    background-color: transparent;
-    font-size: 20px;
-    cursor: pointer;
-    margin-right: 10px;
-    outline: none;
+.date-container img {
+    display: flex;
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 25px;
+    width: 20px;
+    height:20px;
+}
+.search-icon {
+    margin-top: 20px; 
+    margin-left: -50px;
 }
 
-.search-button {
-    color: blue;
+.search-icon img{
+    margin: 10px;
 }
 
-.reset-button {
-    color: red;
-}
 /* activities search list */
 .search-list-container {
     width: 80%;
@@ -246,9 +253,50 @@ body {
 
 .search-table {
     display: flex;
-
     margin: 20px auto;
     border: 1px solid #ccc;
     background-color: #fff;
     justify-content: center;
+    
+}
+table {
+    width: 1500px;  /* sets the table width to occupy the full width of its parent container */
+    height: 500px; /* adjust as needed */
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;  /* This is to ensure child elements with border radius stay inside parent */
+    margin-left: auto;
+}
+
+.pagination a {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    border-left: 1px solid #ccc;
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+}
+
+.pagination a:first-child {
+    border-left: none;
+}
+
+.pagination .active, 
+.pagination a:hover {
+    background-color: #007BFF;  /* This is a shade of blue. Adjust color as needed. */
+    color: #fff;
+}
+
+.pagination .prev, 
+.pagination .next {
+    background-color: #f7f7f7;
+}
+
+.pagination .prev:hover, 
+.pagination .next:hover {
+    background-color: #eee;
 }

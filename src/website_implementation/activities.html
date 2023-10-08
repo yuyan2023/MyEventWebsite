@@ -42,18 +42,34 @@
                 <script src="js/login.js" defer></script>
             </header>
             <div class="search-container">
-                <input type="text" placeholder="Name" class="search-input">
-                <select class="search-input">
-                    <option value="indooroopilly">Indooroopilly</option>
-                    <!-- Other city options can be added here -->
-                </select>
-                <input type="text" placeholder="Zip" class="search-input">
-                <div class="date-container">
-                    <input type="text" placeholder="Sat 09/06/23" readonly class="search-input">
-                    <button class="calendar-button">&#128197;</button>
+              <div class="date-container">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" placeholder="Name" class="search-input">
+              </div>
+              <div class="date-container">
+                  <label for="city">City</label>
+                  <select id="city" class="search-input">
+                      <option value="indooroopilly">Indooroopilly</option>
+                      <!-- Other city options can be added here -->
+                  </select>
+              </div>
+              <div class="date-container">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" placeholder="Zip" class="search-input">
+              </div>
+              <div class="date-container">
+                  <label for="date">Date</label>
+                  <input type="text" id="date" placeholder="Sat 09/06/23" class="search-input">
+                  <img src="media/calendar.png" alt="calendar">
+              </div>
+
+          
+                
+                <div class="search-icon">
+                <img src="media/search.png" alt="search">
+                <img src="media/refresh.png" alt="refresh">
                 </div>
-                <button class="search-button">&#128269;</button>
-                <button class="reset-button">&#10060;</button>
+
             </div>
             <div class="search-table">
             <table border="1" >
@@ -106,4 +122,14 @@
                 </colgroup>
               </table>
             </div>
+
+            <div class="pagination">
+              <a href="#" class="prev">previous</a>
+              <a href="#" class="active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#" class="next">next</a>
+          </div>
+          
         </body>
