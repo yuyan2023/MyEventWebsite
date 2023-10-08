@@ -1,51 +1,115 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Homepage</title>
-        <link rel="stylesheet" href="css/site_styles.css">
-        <link rel="stylesheet" href="css/home_styles.css">
-        <!--google fonts--> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="flex-container">
-            <header class="flex-header-menu header-menu"  aria-label="Main menu">
-                
-                <div class="header-name">
-                    <img src="media/logo.png" alt="logo">
 
-                    <a href="home.html" class="nav-link brand" aria-label="Homepage" aria-current="page" tab-index="0">Wellness Forum</a>   
-                    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/site_styles.css">
+    <link rel="stylesheet" href="css/home_styles.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex-container">
+        <header class="flex-header-menu header-menu" aria-label="Main menu">
+
+            <div class="header-name">
+                <img src="media/logo.png" alt="logo">
+
+                <a href="home.html" class="nav-link brand" aria-label="Homepage" aria-current="page"
+                    tab-index="0">Wellness Forum</a>
+
+
+            </div>
+            <div class="header-links">
+                <a href="activities.html" class="nav-link" aria-label="Join Activities" tab-index="0">Activities</a>
+                <a href="forum.html" class="nav-link" aria-label="Forum" tab-index="0">Forum</a>
+                <a href="fitnesstracker.html" class="nav-link" aria-label="fitness app" tab-index="0">Fitness
+                    Tracker</a>
+                <a href="enroll.html" class="nav-link" aria-label="enrollment" tab-index="0">Enroll</a>
+                <a href="about.html" class="nav-link" aria-label="about us" tab-index="0">About</a>
+
+            </div>
+            <div class="header-login">
+                <a href="javascript:void(0);" onclick="openLoginWindow()" class="login-link" aria-label="Login" tabindex="0">
+                    <img src="media/login.png" alt="Login"> Login
+                </a>
+                <a href="javascript:void(0);" onclick="openRegisterWindow()" class="register-link" aria-label="Register" tabindex="0">
+                    <img src="media/register.png" alt="Register"> Register
+                </a>
+            </div>
+            <!-- Login Modal -->
+            <div class="modal" id="loginModal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Login</h2>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password">
+                    <button onclick="loginUser()">Submit</button>
+                </div>
+            </div>
+
+            <!-- Register Modal -->
+            <div class="modal" id="registerModal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Register</h2>
+                    <label for="reg-username">Username:</label>
+                    <input type="text" id="reg-username">
+                    <label for="reg-password">Password:</label>
+                    <input type="password" id="reg-password">
+                    <button onclick="registerUser()">Submit</button>
+                </div>
+            </div>
+
+            <script src="js/login.js" defer></script>
+        </header>
+
+        <div class="flex-main-content" aria-label="body">
+            <div class="body-picture">
+                <img src="media/sport.jpg" alt="sports">
+                <img src="media/health.jpg" alt="wellness">
+            </div>
+            <div class="content-description">
+                <h1>WELCOME TO WELLNESS FORUM</h1>
+                <div class="section">
+                    <img src="media/sports.png">
+                    <a href="activities.html" class="nav-link" aria-label="activities" tabindex="0">Activities</a>
 
                 </div>
-                <div class="header-links">
-                    <a href="activities.html" class="nav-link" aria-label="Join Activities" tab-index="0">Activities</a>
-                    <a href="forum.html" class="nav-link" aria-label="Forum" tab-index="0">Forum</a>
-                    <a href="fitnesstracker.html" class="nav-link" aria-label="fitness app" tab-index="0">Fitness Tracker</a>
-                    <a href="enroll.html" class="nav-link" aria-label="enrollment" tab-index="0">Enroll</a>
-                    <a href="about.html" class="nav-link" aria-label="about us" tab-index="0">About</a>
-                    
+                <p>All kinds of activities, from low to high intensity,
+                    participate your favourite one for free!</p>
+                <div class="section">
+                    <img src="media/message.png">
+                    <a href="forum.html" class="nav-link" aria-label="forum" tabindex="0">Forum</a>
                 </div>
-                <div class="header-login">
-                    <a href="login.html" class="login-link" aria-label="Login" tabindex="0">
-                        <img src="media/login.png" alt="Login"> Login
-                    </a>
-                    <a href="register.html" class="register-link" aria-label="Register" tabindex="0">
-                        <img src="media/register.png" alt="Register"> Register
-                    </a>
+                <p>Have any questions? want to share dailylife?
+                    want to make new friends? join the forum now!
+                </p>
+
+                <div class="section">
+                    <img src="media/caculation.png">
+                    <a href="fitnesstracker.html" class="nav-link" aria-label="fitnesstracker"
+                        tabindex="0">fitnesstracker</a>
                 </div>
-                
+                <P>wondering if your body work well? doubt how to
+                    develop a good habit? use our fitness tracker!</P>
 
-            </header>
 
+            </div>
         </div>
 
+    </div>
 
 
 
-        
-    </body>
+
+
+</body>
