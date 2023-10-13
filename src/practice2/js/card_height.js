@@ -7,7 +7,7 @@ const changeCardHeights = () => {
         maxHeight = card.offsetHeight;
     }
 });
-cards.forEach(card =>card.computedStyleMap.height = maxHeight + "px");
+cards.forEach(card =>card.style.height = maxHeight + "px");
 }
 window.addEventListener('load', changeCardHeights);
 window.addEventListener('resize', changeCardHeights);

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="communityEventForm">
+        <label for="name">Event Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+    
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location"><br><br>
+    
+        <label for="organiser">Organiser:</label>
+        <input type="text" id="organiser" name="organiser"><br><br>
+    
+        <label for="event_type">Event Type:</label>
+        <input type="text" id="event_type" name="event_type"><br><br>
+    
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea><br><br>
+    
+        <label for="date_time">Date and Time:</label>
+        <input type="datetime-local" id="date_time" name="date_time"><br><br>
+    
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo"><br><br>
+    
+        <label for="website_code">Website Code:</label>
+        <input type="text" id="website_code" name="website_code"><br><br>
+    
+        <input type="button" value="Submit" onclick="submitEvent()">
+    </form>
+    <p id="result"></p>
+</body>
+<script src="js/activity.js"></script>
+</html>

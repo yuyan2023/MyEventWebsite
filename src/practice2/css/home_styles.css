@@ -11,3 +11,19 @@
 .centered-content {
     text-align: center;
 }
+
+
+/* tablet and phones*/
+@media only screen and (min-width: 601px) and (max-width: 1194px) {
+    .centered-content > img {
+        width: 15vw;
+    }
+}
+
+/*desktop:larger than 1194px*/
+@media only screen and (min-width: 1195px) {
+    .centered-content > img {
+        width: 10vw;
+    }
+
+}

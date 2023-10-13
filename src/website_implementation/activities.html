@@ -41,37 +41,68 @@
                 
                 <script src="js/login.js" defer></script>
             </header>
-            <div class="search-container">
+            <form class="search-container">
               <div class="date-container">
                   <label for="name">Name</label>
-                  <input type="text" id="name" placeholder="Name" class="search-input">
+                  <input type="text" id="name" class="search-input" required>
               </div>
               <div class="date-container">
-                  <label for="city">City</label>
-                  <select id="city" class="search-input">
-                      <option value="indooroopilly">Indooroopilly</option>
+                  <label for="location">Location</label>
+                  <select id="location" class="search-input">
+                      <option value="Manly Esplanade">Manly Esplanade</option>
+                      <option value="Meadowlands Park">Meadowlands Park</option>
+                      <option value="UQ">UQ</option>
+                      <option value="Brisbane, Australia">Brisbane, Australia</option>
+                      <option value="The great court">The great court</option>
+                      <option value="Kentucky">Kentucky</option>
+                      <option value="Colmslie Beach Reserve">Colmslie Beach Reserve</option>
                       <!-- Other city options can be added here -->
                   </select>
               </div>
               <div class="date-container">
-                  <label for="zip">Zip</label>
-                  <input type="text" id="zip" placeholder="Zip" class="search-input">
+                <label for="organiser">organiser</label>
+                <select id="organiser" class="search-input">
+                  <option value="Pete">Pete</option>
+                  <option value="LifeWithLabradors">LifeWithLabradors</option>
+                  <option value="AGuyAndAGolden">AGuyAndAGolden</option>
+                  <option value="Slingley Gundogs">Slingley Gundogs</option>
+                  <option value="Slingley Gundogs Again">Slingley Gundogs Again</option>
+                  <option value="William Wegman">William Wegman</option>
+                  <option value="Joe Bloggs">Joe Bloggs</option>
+                  <!-- Other city options can be added here -->
+              </select>
+            </div>
+              <div class="date-container">
+                  <label for="intensity">Intensity</label>
+                  <select id="intensity" class="search-input">
+                    <option value="intensity1">level_1</option>
+                    <option value="intensity2">level_2</option>
+                    <option value="intensity3">level_3</option>
+                  </select>
               </div>
               <div class="date-container">
-                  <label for="date">Date</label>
-                  <input type="text" id="date" placeholder="Sat 09/06/23" class="search-input">
-                  <img src="media/calendar.png" alt="calendar">
+                <label for="date">Date</label>
+                  
+                    
+                    <input type="date" id="date" placeholder="date" class="search-input">
+                    
               </div>
 
-          
+        
                 
                 <div class="search-icon">
+                <button type="button" onclick="searchlist()">
                 <img src="media/search.png" alt="search">
+                </button>
+                <button type="button" onclick="refresh()">
                 <img src="media/refresh.png" alt="refresh">
-                </div>
-
+                </button>
+              </form>
+              
             </div>
-            <div class="search-table">
+            <div id="eventDetails"></div>
+
+            <div id="search-table">
             <table border="1" >
                 <tbody>
                   <tr>
@@ -84,7 +115,7 @@
                     <td>intensity</td>
                   </tr>
                   <tr>
-                    <td><img src="media/football.jpg" alt="play football" width="100"></td>
+                    <td><img src="media/football.jpg" alt="play football" width="200"></td>
                     <td>American football</td>
                     <td>Sat 09/06/23</td>
                     <td>indooroopilly</td>
@@ -105,7 +136,7 @@
                     <td><img src="media/reading.jpg" alt="do reading" width="100"></td>
                     <td>Reading</td>
                     <td>Sat 09/06/23</td>
-                    <td>woowang</td>
+                    <td>toowang</td>
                     <td>6.4</td>
                     <td>15</td>
                     <td><img src="media/Star.png" alt="do reading" width="30"></td>
@@ -131,5 +162,7 @@
               <a href="#">4</a>
               <a href="#" class="next">next</a>
           </div>
-          
+       
+
+          <script src="js/activity.js"></script>
         </body>

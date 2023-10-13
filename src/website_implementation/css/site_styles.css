@@ -118,7 +118,7 @@ body {
 .flex-main-content {
     display: flex;
     align-items: center; /* Aligns the items to the top */
-    gap: 2px; /* Provides space between the images container and text container */
+    gap: -50px; /* Provides space between the images container and text container */
 }
     
 .body-picture {
@@ -132,8 +132,9 @@ body {
     margin-bottom: 20px; /* Adds spacing between the two images */
 }
 .content-description {
-    flex-basis: 40%; /* Takes up 60% of the parent container's width. You can adjust as needed */
+    flex-basis: 30%; /* Takes up 60% of the parent container's width. You can adjust as needed */
     font-size: 0.8em;  /* Adjust for desired font size */
+    margin-right: 200px;
 
 }
 .section {
@@ -151,7 +152,7 @@ body {
 }
 .content-description h1 {
     margin-top: -100px;
-    font-size: 5em; /* Adjust the size as needed */
+    font-size: 4em; /* Adjust the size as needed */
     margin-bottom: 20px; /* Space below the h1 */
     color: #1606fb;
 }
@@ -206,7 +207,7 @@ body {
 .date-container img {
     display: flex;
     position: absolute;
-    margin-left: 170px;
+    margin-left: 160px;
     margin-top: 25px;
     width: 20px;
     height:20px;
@@ -221,37 +222,19 @@ body {
 }
 
 /* activities search list */
-.search-list-container {
-    width: 80%;
+
+#eventDetails {
+    display: flex;
     margin: 20px auto;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-
-
+    background-color: #fff;
+    justify-content: center;
+    overflow: hidden;
+ 
 }
 
-.search-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
 
-}
-
-.search-item img {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.activity-info p {
-    margin: 5px 0;
-}
-
-.search-table {
+#search-table {
     display: flex;
     margin: 20px auto;
     border: 1px solid #ccc;
@@ -259,9 +242,21 @@ body {
     justify-content: center;
     
 }
+
 table {
-    width: 1500px;  /* sets the table width to occupy the full width of its parent container */
+    
+    width: 1400px;  /* sets the table width to occupy the full width of its parent container */
     height: 500px; /* adjust as needed */
+}
+
+table td, table th {
+    padding: 20px;  
+}
+table img {
+    align-items: center;
+    
+    width:80px;
+    height:50px
 }
 
 .pagination {
@@ -299,4 +294,11 @@ table {
 .pagination .prev:hover, 
 .pagination .next:hover {
     background-color: #eee;
+}
+
+#result {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    width: 300px;
 }
