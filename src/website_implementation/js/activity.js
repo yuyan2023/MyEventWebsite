@@ -4,30 +4,15 @@ async function searchlist() {
     var table = document.getElementById('search-table');
     table.style.display = 'none';
 
-    const namelist = document.getElementById("name").value;
-    const locationlist = document.getElementById("location").value;
-    const organiserlist = document.getElementById("organiser").value;
     const baseUrl = `https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community_events/`;
-    
-    const queryParams = {
-    name : namelist,
-    location: locationlist,
-    organiser: organiserlist,
 
-
-    
-}
-
-
-const queryString = new URLSearchParams(queryParams).toString();
-const urlWithParams = baseUrl+"?"+queryString;
 
     const requestOptions = {
         method: 'GET',
        
     };
     try {
-        const response = await fetch(urlWithParams, requestOptions);
+        const response = await fetch(baseUrl, requestOptions);
         const result = await response.json();
 
         // Display the data as an unordered list

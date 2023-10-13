@@ -1,53 +1,98 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Homepage</title>
-        <link rel="stylesheet" href="css/site_styles.css">
-        <link rel="stylesheet" href="css/home_styles.css">
-        <!--google fonts--> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="flex-container">
-            <header class="flex-header-menu header-menu"  aria-label="Main menu">
-                
-                <div class="header-name">
-                    <img src="media/logo.png" alt="logo">
 
-                    <a href="home.html" class="nav-link brand" aria-label="Homepage" aria-current="page" tab-index="0">Wellness Forum</a>   
-                    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/site_styles.css">
+    <link rel="stylesheet" href="css/home_styles.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
 
-                </div>
-                <div class="header-links">
-                    <a href="activities.html" class="nav-link" aria-label="Join Activities" tab-index="0">Activities</a>
-                    <a href="forum.html" class="nav-link" aria-label="Forum" tab-index="0">Forum</a>
-                    <a href="fitnesstracker.html" class="nav-link" aria-label="fitness app" tab-index="0">Fitness Tracker</a>
-                    <a href="enroll.html" class="nav-link" aria-label="enrollment" tab-index="0">Enroll</a>
-                    <a href="about.html" class="nav-link" aria-label="about us" tab-index="0">About</a>
-                    
-                </div>
-                <div class="header-login">
-                    <a href="login.html" class="login-link" aria-label="Login" tabindex="0">
-                        <img src="media/login.png" alt="Login"> Login
-                    </a>
-                    <a href="register.html" class="register-link" aria-label="Register" tabindex="0">
-                        <img src="media/register.png" alt="Register"> Register
-                    </a>
-                </div>
-                
-                
-                <script src="js/login.js" defer></script>
-            </header>
+<body>
+    <div class="flex-container">
+        <header class="flex-header-menu header-menu" aria-label="Main menu">
 
-            <form id="searchForm">
-                <input type="text" id="searchQuery" placeholder="searchQuery">
-                <button type="button" onclick="search()">search</button>
-            </form>
+            <div class="header-name">
+                <img src="media/logo.png" alt="logo">
 
-        <div id="result"></div>
+                <a href="home.html" class="nav-link brand" aria-label="Homepage" aria-current="page"
+                    tab-index="0">Wellness Forum</a>
 
-    <script src="js/event.js"></script>
+
+            </div>
+            <div class="header-links">
+                <a href="activities.html" class="nav-link" aria-label="Join Activities" tab-index="0">Activities</a>
+                <a href="forum.html" class="nav-link" aria-label="Forum" tab-index="0">Forum</a>
+                <a href="fitnesstracker.html" class="nav-link" aria-label="fitness app" tab-index="0">Fitness
+                    Tracker</a>
+                <a href="enroll.html" class="nav-link" aria-label="enrollment" tab-index="0">Enroll</a>
+                <a href="about.html" class="nav-link" aria-label="about us" tab-index="0">About</a>
+
+            </div>
+            <div class="header-login">
+                <a href="login.html" class="login-link" aria-label="Login" tabindex="0">
+                    <img src="media/login.png" alt="Login"> Login
+                </a>
+                <a href="register.html" class="register-link" aria-label="Register" tabindex="0">
+                    <img src="media/register.png" alt="Register"> Register
+                </a>
+            </div>
+
+
+            <script src="js/login.js" defer></script>
+        </header>
+
+        <div id="searchForm">
+            <label>Search In Forum</label>
+
+            <input type="text" placeholder="Enter words" class="forum-input">
+
+            <button type="button">
+                <img src="media/search.png" alt="search button">
+
+            </button>
+        </div>
+        <section class="forum-category" aria-label="category section">
+            
+              <p>-----------Category-----------</p>
+            <div class="category-item">
+              
+                <img src="media/dumbell.png" alt="sport category">
+                <label>Sports</label>
+            </div>
+            <p>--------------------------------</p>
+            <div class="category-item">
+                <img src="media/food.png" alt="food categoty">
+                <label>Food</label>
+            </div>
+            <p>--------------------------------</p>
+            <div class="category-item">
+                <img src="media/greenlife.png" alt="greenlife category">
+                <label>Greenlife</label>
+
+            </div>
+            <p>--------------------------------</p>
+            <div class="category-item">
+                <img src="media/mental.png" alt="mental category">
+                <label>Mental</label>
+
+            </div>
+            <p>--------------------------------</p>
+            <div class="category-item">
+                <img src="media/read.png" alt="read category">
+                <label>Read</label>
+
+            </div>
+            
+            
+
+        </section>
+
+
+
+        <script src="js/event.js"></script>
