@@ -57,37 +57,164 @@ body {
 .flex-header-menu {
     display: none;
 }
+.flex-aside-menu {
+    display: none;
+}
+.phone-extra {
+    display: flex;
+    flex-direction: column;
+}
+#phone-logo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+#phone-login {
+    display: flex;
+    flex-direction: row;
+    font-size: 30%;
+    font-weight: bold;
+    justify-content:space-around;
+}
 
-@media only screen and  (min-width: 601px) and (max-width: 601px)  {
+.content-description h1 {
+
+    margin-top: 5px;
+    font-size: 1.3em; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Space below the h1 */
+    color: #1606fb;
+}
+.flex-main-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; /* Aligns the items to the top */
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+ 
+}
+.body-picture img {
+    max-width: 80%; /* Ensures the images fit within the container */
+    display: block;  /* Removes any bottom spacing often associated with inline images */
+    margin-bottom: 20px; /* Adds spacing between the two images */
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+
+}
+
+@media only screen and  (min-width: 601px) and (max-width: 1194px)  {
+    .flex-footer-menu {
+        display: none;
+    }
+    .flex-header-menu {
+        display: none;
+    }
     .flex-container {
         flex: 1;
     }
-    .flex-header-menu {
+    
+    .flex-aside-menu {
+        border-radius: 30px 30px 30px 30px;
         display: flex;
-        flex-direction: column;
-        position: relative;
+        flex-wrap: wrap;
+        justify-content: center; /* This will push children elements to the far ends */
+        background-color: #fff;
         align-items: center;
-        text-align: start;
-        font-size: 5px;
-        position: relative;           /* Fixing footer to bottom */
-        width: 100%;
-        
-        
- 
+        padding: 2vh 5vw;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    
     }
+    .content-description {
 
+    margin-top: 100px;
+    font-size: 0.6em;  /* Adjust for desired font size */
+    margin-right: 200px;
 
-    .header-links {
-        flex-wrap: wrap; /* Allow the links to wrap to the next line */
-        justify-content: center; /* Center-align the links horizontally */
-    }
-
-    .header-links a {
-        font-size: 16px; /* Adjust the font size for smaller screens */
-        margin: 5px 0; /* Add some spacing between the links */
-    }
 }
+
+    .flex-main-content {
+        display: flex;
+    }
+    
+.header-name {
+    display:flex;
+    align-items: center; /* This ensures that the image and text are vertically aligned in the center. */
+    gap: 1.5em; 
+    text-shadow: 0.1em 0.1em 0.2em black;
+    
+}
+.header-name img {
+    margin-left: -50px;
+    width: 50px;
+    height: auto;
+}
+
+
+.header-name a {
+    padding: 0 20px;
+    color: var(--blue);
+    white-space: nowrap;
+    font-size: 30px;
+}
+.header-name a:hover {
+    border-bottom: 1px solid var(--blue);
+}
+
+.header-links a::before{
+    content: "|";
+    margin: 0 0px; 
+    padding: 0 5px;
+}
+
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2.375rem;
+    flex-wrap: nowrap;
+    justify-self: space-between;
+    
+}
+.header-links a {
+    
+    padding: 1em;
+    color: var(--dark1);
+    white-space: nowrap;
+    font-size: 20px;
+       
+}   
+.content-description h1 {
+    
+    margin-top: -100px;
+    font-size: 4em; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Space below the h1 */
+    color: #1606fb;
+} 
+.flex-main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Aligns the items to the top */
+    gap: -50px; /* Provides space between the images container and text container */
+}
+#phone-logo {
+    display: none;
+}
+.body-picture img {
+    max-width: 80%; /* Ensures the images fit within the container */
+    display: block;  /* Removes any bottom spacing often associated with inline images */
+    margin-bottom: 20px; /* Adds spacing between the two images */
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    opacity: 0.7;
+}
+
+}
+
 @media only screen and (min-width: 1194px) {
+    .flex-aside-menu {
+        display: none;
+    }
     .flex-footer-menu {
         display: none;
     }
@@ -105,6 +232,13 @@ body {
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
     
     }
+    .content-description {
+
+    margin-top: 100px;
+    font-size: 0.6em;  /* Adjust for desired font size */
+    margin-right: 200px;
+
+}
 
     .flex-main-content {
         display: flex;
@@ -155,10 +289,33 @@ body {
     color: var(--dark1);
     white-space: nowrap;
     font-size: 20px;
- 
+       
+}   
+.content-description h1 {
     
-    
-}    
+    margin-top: -100px;
+    font-size: 4em; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Space below the h1 */
+    color: #1606fb;
+} 
+.flex-main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Aligns the items to the top */
+    gap: -50px; /* Provides space between the images container and text container */
+}
+#phone-logo {
+    display: none;
+}
+.body-picture img {
+    max-width: 80%; /* Ensures the images fit within the container */
+    display: block;  /* Removes any bottom spacing often associated with inline images */
+    margin-bottom: 20px; /* Adds spacing between the two images */
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    opacity: 0.7;
+}
+
 }
 
 .flex-container {
@@ -192,12 +349,7 @@ body {
     border-bottom: 2px solid var(--dark1);
 }
 
-.flex-main-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center; /* Aligns the items to the top */
-    gap: -50px; /* Provides space between the images container and text container */
-}
+
 .flex-main-content p{
     font-weight: bold;
 }
@@ -206,21 +358,8 @@ body {
 
 }
 
-.body-picture img {
-    max-width: 80%; /* Ensures the images fit within the container */
-    display: block;  /* Removes any bottom spacing often associated with inline images */
-    margin-bottom: 20px; /* Adds spacing between the two images */
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    opacity: 0.7;
-}
-.content-description {
 
-    margin-top: 100px;
-    font-size: 0.6em;  /* Adjust for desired font size */
-    margin-right: 200px;
 
-}
 .section {
     display: flex;
     align-items: center; /* Aligns the items to the top */
@@ -234,13 +373,7 @@ body {
     height: 30px;
 
 }
-.content-description h1 {
-    
-    margin-top: -100px;
-    font-size: 4em; /* Adjust the size as needed */
-    margin-bottom: 20px; /* Space below the h1 */
-    color: #1606fb;
-}
+
 .content-description a {
     font-size: 3em; /* Adjust the size as needed */
     display: block; /* Makes the <em> elements block level for better spacing control */
