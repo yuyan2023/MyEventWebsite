@@ -43,11 +43,11 @@
             </header>
             <form class="search-container">
               <div class="date-container">
-                  <label for="name">Name</label>
+                  <label for="name" aria-label="activity name">Name</label>
                   <input type="text" id="name" class="search-input" required>
               </div>
               <div class="date-container">
-                  <label for="location">Location</label>
+                  <label for="location" aria-label="location of activity">Location</label>
                   <select id="location" class="search-input">
                       <option value="Manly Esplanade">Manly Esplanade</option>
                       <option value="Meadowlands Park">Meadowlands Park</option>
@@ -60,7 +60,7 @@
                   </select>
               </div>
               <div class="date-container">
-                <label for="organiser">organiser</label>
+                <label for="organiser" aria-label="organiser">organiser</label>
                 <select id="organiser" class="search-input">
                   <option value="Pete">Pete</option>
                   <option value="LifeWithLabradors">LifeWithLabradors</option>
@@ -73,7 +73,7 @@
               </select>
             </div>
               <div class="date-container">
-                  <label for="intensity">Intensity</label>
+                  <label for="intensity" aria-label="activity intensity">Intensity</label>
                   <select id="intensity" class="search-input">
                     <option value="intensity1">level_1</option>
                     <option value="intensity2">level_2</option>
@@ -81,7 +81,7 @@
                   </select>
               </div>
               <div class="date-container">
-                <label for="date">Date</label>
+                <label for="date" aria-label="activity date">Date</label>
                   
                     
                     <input type="date" id="date" placeholder="date" class="search-input">
@@ -91,22 +91,22 @@
         
                 
                 <div class="search-icon">
-                <button type="button" onclick="searchlist()">
+                <button type="button" aria-label="search button" onclick="searchlist()">
                 <img src="media/search.png" alt="search">
                 </button>
-                <button type="button" onclick="refresh()">
+                <button type="button" aria-label="refresh button" onclick="refresh()">
                 <img src="media/refresh.png" alt="refresh">
                 </button>
               </form>
               
             </div>
-            <div id="eventDetails"></div>
+            <div id="eventDetails" aria-label="search result"></div>
 
             <div id="search-table">
             <table border="1" >
                 <tbody>
                   <tr>
-                    <th></th>
+                    <th>Photo</th>
                     <th>activities</th>
                     <th>date</th>
                     <th>location</th>
