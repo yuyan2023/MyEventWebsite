@@ -40,7 +40,7 @@ async function searchlist() {
             tableHTML += `<td><img src="${event.photo} ">
             </td>`
             tableHTML += `<td>${event.name}</td>`;         // Activities
-            tableHTML += `<td>${event.date_time}</td>`;         // Date
+            tableHTML += `<td>${event.date_time.substring(0,7)}</td>`;         // Date
             tableHTML += `<td>${event.location}</td>`;     // Location
             tableHTML += `<td>${event.organiser}</td>`;     // Distance
             tableHTML += `<td>${Math.floor(Math.random()*30)}</td>`;     // Capacity
@@ -50,7 +50,7 @@ async function searchlist() {
         }
         
         tableHTML += '</table>'; // End the table
-        
+   
         eventDetails.innerHTML = tableHTML; // Add the table to the eventDetails
         
     } catch (error) {

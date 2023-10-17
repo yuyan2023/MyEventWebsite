@@ -1,39 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form id="communityEventForm">
-        <label for="name">Event Name:</label>
-        <input type="text" id="name" name="name"><br><br>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>about</title>
+    <link rel="stylesheet" href="css/site_styles.css">
+    <link rel="stylesheet" href="css/home_styles.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Oswald:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  </head>
+<body background="media/back.jpg">
+    <div class="flex-container">
+      <header class="flex-header-menu header-menu" aria-label="header menu">
+  
+        <div class="header-name">
+          <img src="media/logo.png" alt="logo">
+  
+          <a href="home.html" class="nav-link" aria-label="Homepage" aria-current="homepage" tab-index="0">Wellness
+            Forum</a>
+  
+  
+        </div>
+        <div class="header-links">
+          <a href="activities.html" class="nav-link" aria-label="Join Activities" tab-index="0">Activities</a>
+          <a href="forum.html" class="nav-link" aria-label="Forum" tab-index="0">Forum</a>
+  
+          <a href="fitnesstracker.html" class="nav-link" aria-label="fitness app" tab-index="0">Fitness
+            Tracker</a>
+          <a href="enroll.html" class="nav-link" aria-label="enrollment" tab-index="0">Enroll</a>
+          <a href="about.html" class="nav-link" aria-label="about us" tab-index="0">About</a>
+  
+        </div>
+  
+  
+        <div class="header-login">
+          <a href="javascript:void(0);" onclick="openLoginWindow()" class="login-link" aria-label="Login" tabindex="0">
+            <img src="media/login.png" alt="Login"> Login
+          </a>
+          <a href="javascript:void(0);" onclick="openRegisterWindow()" class="register-link" aria-label="Register"
+            tabindex="0">
+            <img src="media/register.png" alt="Register"> Register
+          </a>
+        </div>
+     
+        <script src="js/login.js" defer></script>
+      </header>
+  
+      <aside class="flex-aside-menu aside-menu" aria aria-label="aside-menu">
+        <div class="header-name">
+          <img src="media/logo.png" alt="logo">
+  
+          <a href="home.html" class="nav-link" aria-label="Homepage" aria-current="homepage" tab-index="0">Wellness
+            Forum</a>
+  
+  
+        </div>
+        <div class="header-links">
+          <a href="activities.html" class="nav-link" aria-label="Join Activities" tab-index="0">Activities</a>
+          <a href="forum.html" class="nav-link" aria-label="Forum" tab-index="0">Forum</a>
+  
+          <a href="fitnesstracker.html" class="nav-link" aria-label="fitness app" tab-index="0">Fitness
+            Tracker</a>
+          <a href="enroll.html" class="nav-link" aria-label="enrollment" tab-index="0">Enroll</a>
+          <a href="about.html" class="nav-link" aria-label="about us" tab-index="0">About</a>
+  
+        </div>
+        <div class="header-login">
+          <a href="javascript:void(0);" onclick="openLoginWindow()" class="login-link" aria-label="Login" tabindex="0">
+              <img src="media/login.png" alt="Login"> Login
+          </a>
+          <a href="javascript:void(0);" onclick="openRegisterWindow()" class="register-link" aria-label="Register" tabindex="0">
+              <img src="media/register.png" alt="Register"> Register
+          </a>
+      </div>
+  
+        <script src="js/login.js" defer></script>
+  
+  
+  
+      </aside>
+  
+  
+      <footer class="flex-footer-menu footer-menu" aria aria-label="footer-menu">
+        <div class="header-links">
+          <img src="media/sport3.png">
+          <a href="activities.html" class="nav-link" aria-label="Join Activities" tab-index="0">Activities</a>
+          <img src="media/com.png">
+          <a href="forum.html" class="nav-link" aria-label="Forum" tab-index="0">Forum</a>
+          <img src="media/calculator2.png">
+          <a href="fitnesstracker.html" class="nav-link" aria-label="fitness app" tab-index="0">Fitness
+            Tracker</a>
+          <img src="media/enroll.png">
+          <a href="enroll.html" class="nav-link" aria-label="enrollment" tab-index="0">Enroll</a>
+          <img src="media/about.png">
+          <a href="about.html" class="nav-link" aria-label="about us" tab-index="0">About</a>
+  
+      </footer>
+      <div class="about-us">
+        
+        <div class="about-item">
+          <h1>About us</h1>  
+        <img src="media/about1.png">
+        <p>At Wellness Forum, we believe that well-being is the cornerstone of a fulfilled and vibrant life. Our mission is to inspire, educate, and empower individuals on their journey to achieving optimal health and wellness.</p>
+         </div>
+         <div class="about-item">
+            <h1>Our Vision</h1>
+            <img src="media/about2.png">
+            <p>
+                To be a global beacon for wellness, where everyone, regardless of their background or resources, can find the tools and support to live their healthiest and happiest lives.
+                
+                Join us on this journey, as we revolutionize the way the world perceives and practices wellness. Dive into our vast pool of resources, engage with our community, and discover the endless possibilities that await you. Welcome to the Revive Wellness Forum - Your personal guide to holistic well-being.</p>
+             </div>
+      </div>
     
-        <label for="location">Location:</label>
-        <input type="text" id="location" name="location"><br><br>
-    
-        <label for="organiser">Organiser:</label>
-        <input type="text" id="organiser" name="organiser"><br><br>
-    
-        <label for="event_type">Event Type:</label>
-        <input type="text" id="event_type" name="event_type"><br><br>
-    
-        <label for="description">Description:</label>
-        <textarea id="description" name="description"></textarea><br><br>
-    
-        <label for="date_time">Date and Time:</label>
-        <input type="datetime-local" id="date_time" name="date_time"><br><br>
-    
-        <label for="photo">Photo:</label>
-        <input type="file" id="photo" name="photo"><br><br>
-    
-        <label for="website_code">Website Code:</label>
-        <input type="text" id="website_code" name="website_code"><br><br>
-    
-        <input type="button" value="Submit" onclick="submitEvent()">
-    </form>
-    <p id="result"></p>
-</body>
-<script src="js/activity.js"></script>
-</html>
