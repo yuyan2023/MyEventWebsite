@@ -6,25 +6,32 @@
     --lightgrey: #d8d8d8;
     --bloodred: #730220;
 }
-html, body {
+
+html,
+body {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Raleway', sans-serif;
     background-color: var(--lightgrey);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 
-    
+
 }
+
 .nav-link {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
-.flex-header-menu, .flex-footer-menu, .flex-side-menu {
+
+.flex-header-menu,
+.flex-footer-menu,
+.flex-side-menu {
     flex-shrink: 0;
     background-color: #000;
     color: #fff;
@@ -32,76 +39,142 @@ body {
 }
 
 .flex-footer-menu {
-    display: flex;              /* Activating flexbox */
+    display: flex;
+    /* Activating flexbox */
     flex-wrap: nowrap;
-    justify-content:center;
-    align-items: center;       /* Vertically centering items */
+    justify-content: center;
+    align-items: center;
+    /* Vertically centering items */
     background-color: #131212;
-    padding: 20px 0px;           /* Top and bottom padding */
-    position: fixed;           /* Fixing footer to bottom */
+    padding: 20px 0px;
+    /* Top and bottom padding */
+    position: fixed;
+    /* Fixing footer to bottom */
     width: 100%;
     bottom: 0;
     font-size: smaller;
-    
+
 }
+
 .header-links a {
-    
+
     padding: 0.5em;
 
 
-}   
+}
+
 .flex-footer-menu img {
-    width:15px;
+    width: 15px;
     height: 15px;
 }
+
 .flex-header-menu {
     display: none;
 }
+
 .flex-aside-menu {
     display: none;
 }
+
+/* home for phone */
+#header1 {
+    display: none;
+
+}
+
 .phone-extra {
     display: flex;
     flex-direction: column;
 }
+
 #phone-logo {
     display: flex;
     flex-direction: row;
     margin-top: 40px;
 }
+
 #phone-login {
     display: flex;
     flex-direction: row;
     font-size: 30%;
     font-weight: bold;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 .content-description h1 {
 
     margin-top: 5px;
-    font-size: 1.3em; /* Adjust the size as needed */
-    margin-bottom: 20px; /* Space below the h1 */
+    font-size: 1.3em;
+    /* Adjust the size as needed */
+    margin-bottom: 20px;
+    /* Space below the h1 */
     color: #1606fb;
 }
+
+.section {
+    display: flex;
+
+    align-items: center;
+    /* Aligns the items to the top */
+    gap: 20px;
+    /* Provides space between the images container and text container */
+    color: #1606fb;
+
+}
+
+.content-description img {
+
+    width: 30px;
+    /* Adjust to your desired icon size */
+    height: 30px;
+
+}
+
+.content-description a {
+    font-size: 2em;
+    /* Adjust the size as needed */
+    display: flex;
+    /* Makes the <em> elements block level for better spacing control */
+    margin: 20px 0;
+    /* Adds spacing above and below the <em> elements */
+    color: #1606fb;
+
+}
+
+.content-description p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    /* Adds spacing between paragraphs */
+}
+
 .flex-main-content {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center; /* Aligns the items to the top */
+
+    align-items: center;
+    /* Aligns the items to the top */
     margin-bottom: 50px;
     margin-left: 20px;
     margin-right: 20px;
 
- 
-}
-.body-picture img {
-    max-width: 80%; /* Ensures the images fit within the container */
-    display: block;  /* Removes any bottom spacing often associated with inline images */
-    margin-bottom: 20px; /* Adds spacing between the two images */
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 
 }
+
+.body-picture img {
+    max-width: 80%;
+    /* Ensures the images fit within the container */
+    display: flex;
+    /* Removes any bottom spacing often associated with inline images */
+    margin-bottom: 20px;
+    margin-left: 50px;
+    /* Adds spacing between the two images */
+
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* activity for phone */
 .search-container {
     display: flex;
     flex-direction: column;
@@ -112,7 +185,7 @@ body {
     justify-content: center;
     background-color: rgb(222, 236, 227);
     border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -120,29 +193,31 @@ body {
 
     padding: 5px;
     border: 1px solid #ccc;
- 
+
     border-radius: 5px;
     width: 200px;
 
-    
+
 
 }
 
 .date-container {
 
     display: flex;
-    flex-direction: column;  /* Added to make the content stack vertically */
-    align-items:center; 
+    flex-direction: column;
+    /* Added to make the content stack vertically */
+    align-items: center;
 
 }
 
 
-.search-icon img{
+.search-icon img {
     margin: 10px;
     width: 40px;
     height: 40px;
     border-radius: 10px;
 }
+
 .search-icon button {
     cursor: pointer;
     padding: 0;
@@ -160,7 +235,8 @@ body {
     font-size: 10px;
 
 }
-#eventDetails th{
+
+#eventDetails th {
     width: 20px;
 
 }
@@ -170,435 +246,591 @@ body {
     border: 1px solid #ccc;
     background-color: #fff;
     justify-content: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 
 
-#search-table table td, table th {
+#search-table table td,
+table th {
 
 
     text-align: center;
     font-size: 10px;
-    
-    
+
+
 }
+
 #eventDetails td {
     max-width: 80px;
- }
+}
+
 table img {
     align-items: center;
-    
-    width:60%;
-    height:60%;
+
+    width: 60%;
+    height: 60%;
 }
 
 
-@media only screen and  (min-width: 601px) and (max-width: 1194px)  {
+@media only screen and (min-width: 601px) and (max-width: 1194px) {
     .phone-extra {
-        display:none;
+        display: none;
     }
+
+    #header1 {
+        display: contents;
+        font-size: 25px;
+
+    }
+
     .flex-footer-menu {
         display: none;
     }
+
     .flex-header-menu {
         display: none;
     }
+
     .flex-container {
         flex: 1;
     }
-    
+
     .flex-aside-menu {
         border-radius: 30px 30px 30px 30px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; /* This will push children elements to the far ends */
+        justify-content: center;
+        /* This will push children elements to the far ends */
         background-color: #fff;
         align-items: center;
         padding: 2vh 5vw;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
     }
-    .content-description {
-
-    margin-top: 100px;
-    font-size: 0.6em;  /* Adjust for desired font size */
-    margin-right: 200px;
-
-}
 
     .flex-main-content {
         display: flex;
+
     }
-    
-.header-name {
-    display:flex;
-    align-items: center; /* This ensures that the image and text are vertically aligned in the center. */
-    gap: 1.5em; 
-    text-shadow: 0.1em 0.1em 0.2em black;
-    
-}
-.header-name img {
-    margin-left: -50px;
-    width: 50px;
-    height: auto;
-}
+
+    .content-description {
+        margin-top: 50px;
+        font-size: 0.5em;
+        /* Adjust for desired font size */
+        margin-right: 100px;
+
+    }
+
+    .section {
+        justify-content: baseline;
 
 
-.header-name a {
-    padding: 0 20px;
-    color: var(--blue);
-    white-space: nowrap;
-    font-size: 30px;
-}
-.header-name a:hover {
-    border-bottom: 1px solid var(--blue);
-}
-
-.header-links a::before{
-    content: "|";
-    margin: 0 0px; 
-    padding: 0 5px;
-}
+    }
 
 
-.header-links {
-    display: flex;
-    flex-direction: row;
-    margin-left: 2.375rem;
-    flex-wrap: nowrap;
-    justify-self: space-between;
-    
-}
-.header-links a {
-    
-    padding: 1em;
-    color: var(--dark1);
-    white-space: nowrap;
-    font-size: 20px;
-       
-}   
-.content-description h1 {
-    
-    margin-top: -100px;
-    font-size: 4em; /* Adjust the size as needed */
-    margin-bottom: 20px; /* Space below the h1 */
-    color: #1606fb;
-} 
-.flex-main-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center; /* Aligns the items to the top */
-    gap: -50px; /* Provides space between the images container and text container */
-}
-#phone-logo {
-    display: none;
-}
-.body-picture img {
-    max-width: 80%; /* Ensures the images fit within the container */
-    display: block;  /* Removes any bottom spacing often associated with inline images */
-    margin-bottom: 20px; /* Adds spacing between the two images */
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    opacity: 0.7;
-}
-/* activity */
-.search-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 15vh;
-    width: 100%;
-    align-items: center;
 
-    justify-content: center;
-    background-color: rgb(222, 236, 227);
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    .header-name {
+        display: flex;
+        align-items: center;
+        /* This ensures that the image and text are vertically aligned in the center. */
+        gap: 1.5em;
+        text-shadow: 0.1em 0.1em 0.2em black;
 
-}
+    }
 
-.search-input {
-
-    padding: 5px;
-    border: 1px solid #ccc;
- 
-    border-radius: 5px;
-    width: 200px;
-
-    
-
-}
-
-.date-container {
-
-    display: flex;
-    flex-direction: column;  /* Added to make the content stack vertically */
-    align-items:center; 
-
-}
+    .header-name img {
+        margin-left: -50px;
+        width: 50px;
+        height: auto;
+    }
 
 
-.search-icon img{
-    margin: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-}
-.search-icon button {
-    cursor: pointer;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
+    .header-name a {
+        padding: 0 20px;
+        color: var(--blue);
+        white-space: nowrap;
+        font-size: 30px;
+    }
 
-#eventDetails {
-    display: flex;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    justify-content: center;
-    overflow: hidden;
-    text-align: center;
- 
-}
+    .header-name a:hover {
+        border-bottom: 1px solid var(--blue);
+    }
+
+    .header-links a::before {
+        content: "|";
+        margin: 0 0px;
+        padding: 0 5px;
+    }
 
 
-#search-table {
-    display: flex;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    justify-content: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    
-}
+    .header-links {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2.375rem;
+        flex-wrap: nowrap;
+        justify-self: space-between;
+
+    }
+
+    .header-links a {
+
+        padding: 1em;
+        color: var(--dark1);
+        white-space: nowrap;
+        font-size: 20px;
+
+    }
+
+    .content-description h1 {
 
 
-#search-table table td, table th {
-    width:150px;
-    padding: 10px;  
-    text-align: center;
-}
-table img {
-    align-items: center;
-    
-    width:80px;
-    height:50px
-}
+        font-size: 1em;
+        /* Adjust the size as needed */
+        margin-bottom: 20px;
+        /* Space below the h1 */
+        color: #1606fb;
+    }
+
+    .section p {
+        font-size: 15px;
+
+    }
+
+    .section a {
+        font-size: 20px;
+    }
+
+    .flex-main-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* Aligns the items to the top */
+        gap: -50px;
+        /* Provides space between the images container and text container */
+    }
+
+    #phone-logo {
+        display: none;
+    }
+
+    .body-picture img {
+        max-width: 80%;
+        /* Ensures the images fit within the container */
+        display: block;
+        /* Removes any bottom spacing often associated with inline images */
+        margin-bottom: 20px;
+        /* Adds spacing between the two images */
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        opacity: 0.7;
+    }
+
+    /* activity */
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 15vh;
+        width: 100%;
+        align-items: center;
+
+        justify-content: center;
+        background-color: rgb(222, 236, 227);
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .search-input {
+
+        padding: 5px;
+        border: 1px solid #ccc;
+
+        border-radius: 5px;
+        width: 200px;
+
+
+
+    }
+
+    .date-container {
+
+        display: flex;
+        flex-direction: column;
+        /* Added to make the content stack vertically */
+        align-items: center;
+
+    }
+
+
+    .search-icon img {
+        margin: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .search-icon button {
+        cursor: pointer;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #eventDetails {
+        display: flex;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        justify-content: center;
+        overflow: hidden;
+        text-align: center;
+
+    }
+
+
+    #search-table {
+        display: flex;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        justify-content: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    }
+
+
+    #search-table table td,
+    table th {
+        width: 150px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    table img {
+        align-items: center;
+
+        width: 80px;
+        height: 50px
+    }
+
+    .section {
+        display: flex;
+        align-items: center;
+        /* Aligns the items to the top */
+        gap: 20px;
+        /* Provides space between the images container and text container */
+        color: #1606fb;
+
+    }
+
+    .content-description img {
+
+        width: 30px;
+        /* Adjust to your desired icon size */
+        height: 30px;
+
+    }
+
+    .content-description a {
+        font-size: 3em;
+        /* Adjust the size as needed */
+        display: flex;
+        /* Makes the <em> elements block level for better spacing control */
+        margin: 20px 0;
+        /* Adds spacing above and below the <em> elements */
+        color: #1606fb;
+
+    }
+
+    .content-description p {
+        font-size: 2em;
+        margin-bottom: 20px;
+        /* Adds spacing between paragraphs */
+    }
 
 }
 
 @media only screen and (min-width: 1194px) {
     .phone-extra {
-        display:none;
+        display: none;
+    }
+
+    #header1 {
+        display: contents;
+        font-size: 35px;
+        font-weight: bold;
+
+        text-shadow: 2px 2px 3px #007BFF;
+
     }
 
     .flex-aside-menu {
         display: none;
     }
+
     .flex-footer-menu {
         display: none;
     }
+
     .flex-container {
         flex: 1;
     }
-    
+
     .flex-header-menu {
         border-radius: 30px 30px 30px 30px;
         display: flex;
-        justify-content: space-between; /* This will push children elements to the far ends */
+        justify-content: space-between;
+        /* This will push children elements to the far ends */
         background-color: #fff;
         align-items: center;
         padding: 2vh 5vw;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
     }
+
     .content-description {
 
-    margin-top: 100px;
-    font-size: 0.6em;  /* Adjust for desired font size */
-    margin-right: 200px;
+        margin-top: 100px;
+        font-size: 0.6em;
+        /* Adjust for desired font size */
+        margin-right: 200px;
 
-}
+    }
 
     .flex-main-content {
         display: flex;
     }
-    
-.header-name {
-    display:flex;
-    align-items: center; /* This ensures that the image and text are vertically aligned in the center. */
-    gap: 1.5em; 
-    text-shadow: 0.1em 0.1em 0.2em black;
-    
-}
-.header-name img {
-    margin-left: -50px;
-    width: 50px;
-    height: auto;
-}
+
+    .header-name {
+        display: flex;
+        align-items: center;
+        /* This ensures that the image and text are vertically aligned in the center. */
+        gap: 1.5em;
+        text-shadow: 0.1em 0.1em 0.2em black;
+
+    }
+
+    .header-name img {
+        margin-left: -50px;
+        width: 50px;
+        height: auto;
+    }
 
 
-.header-name a {
-    padding: 0 20px;
-    color: var(--blue);
-    white-space: nowrap;
-    font-size: 30px;
-}
-.header-name a:hover {
-    border-bottom: 1px solid var(--blue);
-}
+    .header-name a {
+        padding: 0 20px;
+        color: var(--blue);
+        white-space: nowrap;
+        font-size: 30px;
+    }
 
-.header-links a::before{
-    content: "|";
-    margin: 0 0px; 
-    padding: 0 5px;
-}
+    .header-name a:hover {
+        border-bottom: 1px solid var(--blue);
+    }
 
-
-.header-links {
-    display: flex;
-    flex-direction: row;
-    margin-left: 9.375rem;
-    flex-wrap: nowrap;
-    justify-self: space-between;
-    
-}
-.header-links a {
-    
-    padding: 1em;
-    color: var(--dark1);
-    white-space: nowrap;
-    font-size: 20px;
-       
-}   
-.content-description h1 {
-    
-    margin-top: -100px;
-    font-size: 4em; /* Adjust the size as needed */
-    margin-bottom: 20px; /* Space below the h1 */
-    color: #1606fb;
-} 
-.flex-main-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center; /* Aligns the items to the top */
-    gap: -50px; /* Provides space between the images container and text container */
-}
-#phone-logo {
-    display: none;
-}
-.body-picture img {
-    max-width: 80%; /* Ensures the images fit within the container */
-    display: block;  /* Removes any bottom spacing often associated with inline images */
-    margin-bottom: 20px; /* Adds spacing between the two images */
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    opacity: 0.7;
-}
-/* activity search bar */
-.search-container {
-    display: flex;
-    flex-direction: row;
-    min-height: 15vh;
-
-    align-items: center;
-
-    justify-content: center;
-    background-color: rgb(222, 236, 227);
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-
-}
-
-.search-input {
-
-    padding: 10px;
-    border: 1px solid #ccc;
- 
-    border-radius: 5px;
-    margin-right: 50px;
-
-}
-
-.date-container {
-
-    display: flex;
-    flex-direction: column;  /* Added to make the content stack vertically */
-    align-items: flex-start; 
-
-}
-
-.date-container img {
-    display: flex;
-    position: absolute;
-    margin-left: 160px;
-    margin-top: 25px;
-    width: 20px;
-    height:20px;
-}
-.search-icon {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px; 
-    margin-left: -50px;
-}
-
-.search-icon img{
-    margin: 10px;
-}
-.search-icon button {
-    cursor: pointer;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-#eventDetails {
-    display: flex;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    justify-content: center;
-    overflow: hidden;
-    text-align: center;
-    font-size: 20px;
-    
- 
-}
-#eventDetails td{
-    min-width: 150px;
-}
+    .header-links a::before {
+        content: "|";
+        margin: 0 0px;
+        padding: 0 5px;
+    }
 
 
-#search-table {
-    display: flex;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    justify-content: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    
-}
+    .header-links {
+        display: flex;
+        flex-direction: row;
+        margin-left: 9.375rem;
+        flex-wrap: nowrap;
+        justify-self: space-between;
+
+    }
+
+    .header-links a {
+
+        padding: 1em;
+        color: var(--dark1);
+        white-space: nowrap;
+        font-size: 20px;
+
+    }
+
+    .content-description h1 {
+
+        margin-top: -100px;
+        font-size: 4em;
+        /* Adjust the size as needed */
+        margin-bottom: 20px;
+        /* Space below the h1 */
+        color: #1606fb;
+    }
+
+    .flex-main-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* Aligns the items to the top */
+        gap: -50px;
+        /* Provides space between the images container and text container */
+    }
+
+    #phone-logo {
+        display: none;
+    }
+
+    .body-picture img {
+        max-width: 80%;
+        /* Ensures the images fit within the container */
+        display: block;
+        /* Removes any bottom spacing often associated with inline images */
+        margin-bottom: 20px;
+        /* Adds spacing between the two images */
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        opacity: 0.7;
+    }
+
+    /* activity search bar */
+    .search-container {
+        display: flex;
+        flex-direction: row;
+        min-height: 15vh;
+
+        align-items: center;
+
+        justify-content: center;
+        background-color: rgb(222, 236, 227);
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .search-input {
+
+        padding: 10px;
+        border: 1px solid #ccc;
+
+        border-radius: 5px;
+        margin-right: 50px;
+
+    }
+
+    .date-container {
+
+        display: flex;
+        flex-direction: column;
+        /* Added to make the content stack vertically */
+        align-items: flex-start;
+
+    }
+
+    .date-container img {
+        display: flex;
+        position: absolute;
+        margin-left: 160px;
+        margin-top: 25px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .search-icon {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        margin-left: -50px;
+    }
+
+    .search-icon img {
+        margin: 10px;
+    }
+
+    .search-icon button {
+        cursor: pointer;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #eventDetails {
+        display: flex;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        justify-content: center;
+        overflow: hidden;
+        text-align: center;
+        font-size: 20px;
 
 
-#search-table table td, table th {
-    width:150px;
-    padding: 10px;  
-    text-align: center;
-    font-size: 20px;
-}
-table img {
-    align-items: center;
-    
-    width:80px;
-    height:50px
-}
+    }
+
+    #eventDetails td {
+        min-width: 150px;
+    }
 
 
+    #search-table {
+        display: flex;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        justify-content: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    }
+
+
+    #search-table table td,
+    table th {
+        width: 150px;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    table img {
+        align-items: center;
+
+        width: 80px;
+        height: 50px
+    }
+
+    .section {
+        display: flex;
+        align-items: center;
+        /* Aligns the items to the top */
+        gap: 20px;
+        /* Provides space between the images container and text container */
+        color: #1606fb;
+
+    }
+
+    .content-description img {
+
+        width: 30px;
+        /* Adjust to your desired icon size */
+        height: 30px;
+
+    }
+
+    .content-description a {
+        font-size: 3em;
+        /* Adjust the size as needed */
+        display: flex;
+        /* Makes the <em> elements block level for better spacing control */
+        margin: 20px 0;
+        /* Adds spacing above and below the <em> elements */
+        color: #1606fb;
+
+    }
+
+    .content-description p {
+        font-size: 2em;
+        margin-bottom: 20px;
+        /* Adds spacing between paragraphs */
+    }
 }
 
 .flex-container {
@@ -611,19 +843,26 @@ table img {
 
 
 .header-login {
-    gap: 10px; 
-    color: blue;  /* Font color */
-    font-size: 0.8em;  /* Adjust for desired font size */
-    margin-left: 15px;  /* Space between the individual links */
+    gap: 10px;
+    color: blue;
+    /* Font color */
+    font-size: 0.8em;
+    /* Adjust for desired font size */
+    margin-left: 15px;
+    /* Space between the individual links */
     display: flex;
-    align-items: center;  /* Vertically align the icon with the text */
-    text-decoration: none; /* Optional: remove the underline from the link */
+    align-items: center;
+    /* Vertically align the icon with the text */
+    text-decoration: none;
+    /* Optional: remove the underline from the link */
 }
 
 .header-login img {
-    
-    margin-right: 5px;  /* Space between the icon and the link text */
-    width: 15px;  /* Adjust to your desired icon size */
+
+    margin-right: 5px;
+    /* Space between the icon and the link text */
+    width: 15px;
+    /* Adjust to your desired icon size */
     height: 15px;
 
 }
@@ -633,44 +872,17 @@ table img {
 }
 
 
-.flex-main-content p{
+.flex-main-content p {
     font-weight: bold;
 }
+
 .body-picture {
     margin-top: 20px;
 
 }
 
-
-
-.section {
-    display: flex;
-    align-items: center; /* Aligns the items to the top */
-    gap: 20px; /* Provides space between the images container and text container */
-    color: #1606fb;
-    
-}
-.content-description img {
-
-    width: 30px;  /* Adjust to your desired icon size */
-    height: 30px;
-
-}
-
-.content-description a {
-    font-size: 3em; /* Adjust the size as needed */
-    display: block; /* Makes the <em> elements block level for better spacing control */
-    margin: 20px 0; /* Adds spacing above and below the <em> elements */
-    color: #1606fb;
-
-}
 .content-description a:hover {
     border-bottom: 1px solid var(--blue);
-}
-
-.content-description p {
-    font-size: 1.5em;
-    margin-bottom: 20px; /* Adds spacing between paragraphs */
 }
 
 /* activities */
@@ -684,7 +896,8 @@ table img {
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 5px;
-    overflow: hidden;  /* This is to ensure child elements with border radius stay inside parent */
+    overflow: hidden;
+    /* This is to ensure child elements with border radius stay inside parent */
     margin-left: auto;
 }
 
@@ -693,49 +906,54 @@ table img {
     text-decoration: none;
     color: #333;
     border-left: 1px solid #ccc;
-    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
 }
 
 .pagination a:first-child {
     border-left: none;
 }
 
-.pagination .active, 
+.pagination .active,
 .pagination a:hover {
-    background-color: #007BFF;  /* This is a shade of blue. Adjust color as needed. */
+    background-color: #007BFF;
+    /* This is a shade of blue. Adjust color as needed. */
     color: #fff;
 }
 
-.pagination .prev, 
+.pagination .prev,
 .pagination .next {
     background-color: #f7f7f7;
 }
 
-.pagination .prev:hover, 
+.pagination .prev:hover,
 .pagination .next:hover {
     background-color: #eee;
 }
+
 /*forum search bar */
 #searchForm {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     font-size: 25px;
     font-weight: bold;
     color: var(--blue);
-    
+
 }
+
 .forum-input {
 
     padding: 10px;
     border: 1px solid #ccc;
     width: 400px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
- 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
     border-radius: 5px;
 
 }
+
 #searchForm button {
     padding: 0;
     border: none;
@@ -743,41 +961,46 @@ table img {
     cursor: pointer;
 
 }
+
 #searchForm img {
     width: 35px;
-    height:35px;
+    height: 35px;
     border-radius: 5px;
     margin-bottom: -2px;
 }
-/*forum category */
-.flex-forum{
-    display: flex;
-    gap:5px
 
+/*forum category */
+.flex-forum {
+    display: flex;
+    gap: 5px
 }
+
 .forum-category {
 
-    width:15%;
+    width: 15%;
     flex-wrap: nowrap;
     position: relative;
     flex-direction: column;
     justify-content: center;
-    align-items: center;     /* centers items vertically in a row-direction flex container */
+    align-items: center;
+    /* centers items vertically in a row-direction flex container */
     text-align: center;
     vertical-align: middle;
     background-color: #f8f8f8;
     margin-left: 50px;
     margin-top: 20px;
     margin-right: 20vh;
-    box-shadow: -8px 8px 8px  rgba(0, 0, 0, 0.1);  
+    box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    
+
 }
+
 .forum-category h1 {
     margin-top: -5px;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;  /* or 900 for black */
+    font-weight: bold;
+    /* or 900 for black */
 
 }
 
@@ -788,21 +1011,23 @@ table img {
 
     display: flex;
     align-items: center;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
-    
+
     padding: 20px;
     padding: 10px 0;
-    
+
     border-top: 1px solid #ccc;
     font-weight: 600;
 }
+
 .category-item a {
     color: #2d6dd6;
     white-space: nowrap;
     text-decoration: none;
 
 }
+
 .category-item a:hover {
     border-bottom: 1px solid var(--blue);
     background-color: #d8d8d8;
@@ -810,9 +1035,10 @@ table img {
 
 
 .category-item img {
-    height:30px;
+    height: 30px;
     width: 30px;
 }
+
 /*forum most popular and recent tables */
 .forum-body {
     display: flex;
@@ -822,11 +1048,12 @@ table img {
 
 
 }
+
 .forum-popular {
-   
+
     position: relative;
 
-    justify-content:center;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 15px;
 
@@ -836,33 +1063,38 @@ table img {
 
     position: relative;
 
-    justify-content:center;
+    justify-content: center;
 
 
 }
+
 .forum-body table {
-    width: 100%; 
-    height: 100%;   
+    width: 100%;
+    height: 100%;
     background-color: #f8f8f8;
- 
+
 }
+
 .forum-body table th {
-    padding-top: 5px;   
-    padding-bottom: 5px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
 .forum-body table strong {
     color: #2d6dd6;
 }
+
 .forum-body a {
     color: #2d6dd6;
     white-space: nowrap;
     text-decoration: none;
 }
+
 .forum-body a:hover {
     border-bottom: 1px solid var(--blue);
 }
+
 .col-item a {
     font-family: 'Bree Serif', serif;
     color: #090B0D;
@@ -873,43 +1105,52 @@ table img {
     display: flex;
     flex-direction: row;
 }
-.col-item img{
-    width:20px;
+
+.col-item img {
+    width: 20px;
     height: 20px;
 }
+
 .col-item-2 {
     display: flex;
     flex-direction: row;
-}    
-.col-item-2 img{
-    width:15px;
+}
+
+.col-item-2 img {
+    width: 15px;
     height: 15px;
 }
+
 .comment-font {
     font-size: 19px;
     color: #ff0606;
     text-align: center;
     vertical-align: middle;
 }
+
 .comment-font-2 {
     color: #090B0D;
     text-align: center;
     vertical-align: middle;
 }
+
 .col-category {
     text-align: center;
     vertical-align: middle;
 }
+
 .col-category a {
     font-family: 'Lora', serif;
 
     color: #090B0D;
 }
+
 .col-category a:hover {
 
     border-bottom: 1px solid var(--dark1);
 
 }
+
 .fitness-container {
     display: flex;
     flex-direction: column;
@@ -924,24 +1165,29 @@ table img {
     display: flex;
     flex-direction: column;
     width: 300px;
-    height:300px;
+    height: 300px;
     font-weight: bolder;
     vertical-align: middle;
 
 }
-#calorie-form input,select {
+
+#calorie-form input,
+select {
     padding: 6px;
 }
+
 #calorie-form label {
     padding: 7px;
     font-weight: bold;
 }
+
 #calorie-form button {
     margin-top: 10px;
     border-radius: 10px;
     width: 100px;
-    
+
 }
+
 #result {
     text-align: center;
     border: 1px solid #171ae6;
@@ -953,32 +1199,36 @@ table img {
 
 /* about layout */
 .about-us {
-    display:flex;
+    display: flex;
     flex-direction: column;
 
 
 }
+
 .about-item {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .about-item h1 {
     font-size: 35px;
     font-weight: bolder;
-    
+
 }
+
 .about-item p {
     font-size: 30px;
     background-color: #d9e2e7;
     max-width: 700px;
     padding: 10px;
     border-radius: 9px;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }
+
 .about-item img {
-    width:40vh;
+    width: 40vh;
     height: 40vh;
     border-radius: 5px;
     box-shadow: 5px 5px 5px 5px #425059;
