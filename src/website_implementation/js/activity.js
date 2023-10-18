@@ -35,7 +35,10 @@ async function searchlist() {
             </tr>
         `;
         
-        for (const event of result) {
+        const maxRowsToShow = 10; // Set the maximum number of rows to display
+
+        for (let i = 0; i < Math.min(maxRowsToShow, result.length); i++) {
+            const event = result[i];
             tableHTML += '<tr>'; // Start a table row
             tableHTML += `<td><img src="${event.photo} ">
             </td>`
@@ -62,22 +65,3 @@ async function searchlist() {
 function refresh() {
     location.reload();
 }
-// async function http(obj) {
-//     let { method,url,params,data } = obj
-//     console.log(method, url, params, data)
-//     if (params) {
-//         let str = new URLSearchParams(params).toString()
-//         console.log(str)
-//     }
-// }
-
-// async function searchlist() {
-//     let result = http({
-//         method:'get',
-//         url:'https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community_events/',
-      
-//     })
-//     console.log(result)
-// }
-
-// searchlist()
