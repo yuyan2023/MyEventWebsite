@@ -1,7 +1,7 @@
 
 
 async function searchlist() {
-    var table = document.getElementById('search-table');
+    let table = document.getElementById('search-table');
     table.style.display = 'none';
 
     const baseUrl = `https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community_events/`;
