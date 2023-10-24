@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forum</title>
+  <link rel="icon" type="image" href="https://jubic.notion.site/images/favicon.ico">
+  <link rel="stylesheet" href="css/site_styles.css">
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+<!-- back.jpg references from https://www.pexels.com-->
+<body background="media/healthforum.jpg">
+  <div class="flex-container">
+    <header class="flex-header-menu header-menu" aria-label="header menu">
+
+      <div class="header-name">
+        <img src="media/logo.png" alt="logo">
+
+        <a href="home.html" class="nav-link" aria-label="Homepage" aria-current="homepage" tab-index="0">Wellness
+          Forum</a>
+
+
+      </div>
+      <div class="header-links">
+        <a href="activities.html" class="nav-link" aria-label="Join Activities" tab-index="0">Activities</a>
+        <a href="forum.html" class="nav-link" aria-label="Forum" tab-index="0">Forum</a>
+
+        <a href="fitnesstracker.html" class="nav-link" aria-label="fitness app" tab-index="0">Fitness
+          Tracker</a>
+        <a href="enroll.html" class="nav-link" aria-label="enrollment" tab-index="0">Enroll</a>
+        <a href="about.html" class="nav-link" aria-label="about us" tab-index="0">About</a>
+
+      </div>
+
+
+      <div class="header-login">
+        <a href="javascript:void(0);" onclick="openLoginWindow()" class="login-link" aria-label="Login" tabindex="0">
+          <img src="media/login.png" alt="Login"> Login
+        </a>
+        <a href="javascript:void(0);" onclick="openRegisterWindow()" class="register-link" aria-label="Register"
+          tabindex="0">
+          <img src="media/register.png" alt="Register"> Register
+        </a>
+      </div>
+    </header>
+
+    <aside class="flex-aside-menu aside-menu" aria aria-label="aside-menu">
+      <div class="header-name">
+        <img src="media/logo.png" alt="logo">
+
+        <a href="home.html" class="nav-link" aria-label="Homepage" aria-current="homepage" tab-index="0">Wellness
+          Forum</a>
+
+
+      </div>
+      <div class="header-links">
+        <a href="activities.html" class="nav-link" aria-label="Join Activities" tab-index="0">Activities</a>
+        <a href="forum.html" class="nav-link" aria-label="Forum" tab-index="0">Forum</a>
+
+        <a href="fitnesstracker.html" class="nav-link" aria-label="fitness app" tab-index="0">Fitness
+          Tracker</a>
+        <a href="enroll.html" class="nav-link" aria-label="enrollment" tab-index="0">Enroll</a>
+        <a href="about.html" class="nav-link" aria-label="about us" tab-index="0">About</a>
+
+      </div>
+      <div class="header-login">
+        <a href="javascript:void(0);" onclick="openLoginWindow()" class="login-link" aria-label="Login" tabindex="0">
+          <img src="media/login.png" alt="Login"> Login
+        </a>
+        <a href="javascript:void(0);" onclick="openRegisterWindow()" class="register-link" aria-label="Register"
+          tabindex="0">
+          <img src="media/register.png" alt="Register"> Register
+        </a>
+      </div>
+    </aside>
+
+
+    <footer class="flex-footer-menu footer-menu" aria aria-label="footer-menu">
+      <div class="header-links">
+        <img src="media/homefoot.png">
+        <a href="home.html" class="nav-link" aria-label="home" tab-index="0">Home</a>
+        <img src="media/sport3.png">
+        <a href="activities.html" class="nav-link" aria-label="Join Activities" tab-index="0">Activities</a>
+        <img src="media/com.png">
+        <a href="forum.html" class="nav-link" aria-label="Forum" tab-index="0">Forum</a>
+        <img src="media/calculator2.png">
+        <a href="fitnesstracker.html" class="nav-link" aria-label="fitness app" tab-index="0">Calculator</a>
+        <img src="media/enroll.png">
+        <a href="enroll.html" class="nav-link" aria-label="enrollment" tab-index="0">Enroll</a>
+        <img src="media/about.png">
+        <a href="about.html" class="nav-link" aria-label="about us" tab-index="0">About</a>
+
+    </footer>
+
+    <div id="searchForm">
+      <label>Search In Forum</label>
+
+      <input type="text" placeholder="Enter words" class="forum-input">
+
+      <button type="button">
+        <img src="media/search.png" alt="search button">
+
+      </button>
+    </div>
+    <div class="flex-forum">
+      <table class="forum-category" aria-label="category section">
+        <tbody>
+          <tr>
+            <td>
+              <h1>Category</h1>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="category-item">
+
+                <img src="media/dumbell.png" alt="sport category">
+                <a href="" tabindex="0">Sports</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="category-item">
+                <img src="media/food.png" alt="food categoty">
+                <a href="" tabindex="0">Food</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="category-item">
+                <img src="media/greenlife.png" alt="greenlife category">
+                <a href="" tabindex="0">Greenlife</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="category-item">
+                <img src="media/mental.png" alt="mental category">
+                <a href="" tabindex="0">Mental</a>
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="category-item">
+                <img src="media/read.png" alt="read category">
+                <a href="" tabindex="0">Read</a>
+
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <colgroup>
+          <col>
+        </colgroup>
+      </table>
+      <div class="forum-body">
+        <section class="forum-popular">
+          <table border="1" cellspacing="0" cellpadding="0">
+            <thead>
+              <tr>
+
+                <th colspan="2">
+                  <div class="col-item">
+                    <img src="media/popular.png">
+                    <a href="" tabindex="0">Popular</a>
+                  </div>
+                </th>
+
+                <th>
+                  <div class="col-item-2">
+                    <img src="media/comment-forum.png">comment
+                  </div>
+                </th>
+                <th>
+                  <div class="col-item-2">
+                    <img src="media/date-forum.png">date
+                  </div>
+                </th>
+
+                <th>
+                  <div class="col-item-2">
+                    <img src="media/user-forum.png">user
+                  </div>
+                </th>
+
+              </tr>
+            <tbody>
+              </thead>
+
+              <tr>
+                <td class="col-category" style="width: 8%;"><a href="" tabindex="0">Read</a></td>
+                <td style="width: 80%;"><a href="" tabindex="0"><strong>A 30-Minute Meditation to Play on a Walk or
+                      Hike</strong></a></td>
+                <td class="comment-font">1203</td>
+                <td>09/09/23</td>
+                <td>ADMIN</td>
+              </tr>
+              <tr>
+                <td class="col-category"><a href="" tabindex="0">Read</a></td>
+                <td><a href="" tabindex="0"><strong>How Do You Heal from an Old, Set-In Injury?</strong></a></td>
+                <td class="comment-font">1031</td>
+                <td>12/04/23</td>
+                <td>ADMIN</td>
+              </tr>
+              <tr>
+                <td class="col-category"><a href="" tabindex="0">Food</a></td>
+                <td><a href="" tabindex="0"><strong>Eat like a king when you are in a diet</strong></a></td>
+                <td class="comment-font">760</td>
+                <td>05/04/23</td>
+                <td>eWEN</td>
+              </tr>
+              <tr>
+                <td class="col-category"><a href="" tabindex="0">Sports</a></td>
+                <td><a href="" tabindex="0"><strong>my bicep hurts a lot recently, can somebody help?</strong></a> </td>
+                <td class="comment-font">480</td>
+                <td> 21/03/23</td>
+                <td>GIGYBY</td>
+              </tr>
+            </tbody>
+            <colgroup>
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+            </colgroup>
+          </table>
+        </section>
+        <section class="forum-recent">
+          <table border="1" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+
+                <th colspan="2">
+                  <div class="col-item">
+                    <img src="media/new.png">
+                    <a href="" tabindex="0">Recently</a>
+                  </div>
+                </th>
+
+                <th>
+                  <div class="col-item-2">
+                    <img src="media/comment-forum.png">comment
+                  </div>
+                </th>
+                <th>
+                  <div class="col-item-2">
+                    <img src="media/date-forum.png">date
+                  </div>
+                </th>
+                <th>
+                  <div class="col-item-2">
+                    <img src="media/user-forum.png">user
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <td class="col-category"><a href="" tabindex="0">Sports</a></td>
+                <td style="width: 80%;"><a href="" tabindex="0"><strong>HELP!help guys!</strong></a> how to lose 20 kg
+                  in a month, i got a very importan...... </td>
+                <td class="comment-font-2">20</td>
+                <td> 28/09/23</td>
+                <td>JApickel</td>
+              </tr>
+              <tr>
+                <td class="col-category"><a href="" tabindex="0">Food</a></td>
+                <td><a href="" tabindex="0"><strong>High protein meal</strong></a> here is the recipe, 50g Myprotein
+                  powder, 100g banana,........</td>
+                <td class="comment-font-2">6</td>
+                <td> 28/09/23</td>
+                <td>catty</td>
+              </tr>
+              <tr>
+                <td class="col-category"><a href="" tabindex="0">Food</a></td>
+                <td><a href="" tabindex="0"><strong>can i eat pinapple after exercise</strong></a>as i said in the
+                  title, pineapple is helpful for .......</td>
+                <td class="comment-font-2">40</td>
+                <td>28/09/23</td>
+                <td>hoseman</td>
+              </tr>
+              <tr>
+                <td class="col-category"><a href="" tabindex="0">Greenlife</a></td>
+                <td><a href="" tabindex="0"><strong>how do you handle the kitchen rubbish?</strong></a>the soup was
+                  spilled everywhere o .......</td>
+                <td class="comment-font-2">77</td>
+                <td> 28/09/23</td>
+                <td>rolying</td>
+              </tr>
+              <tr>
+                <td class="col-category"><a href="" tabindex="0">Mental</a></td>
+                <td><a href="" tabindex="0"><strong>CAN'T SLEEP AFTER NIGHT EXERCISE</strong></a>i got insomnia after i
+                  worked one hou......</td>
+                <td class="comment-font-2">53</td>
+                <td> 27/09/23</td>
+                <td>4864ae</td>
+              </tr>
+              <tr>
+                <td class="col-category"><a href="" tabindex="0">Sports</a></td>
+                <td><a href="" tabindex="0"><strong>squart matters!</strong></a>if you guys want to make leg muscle
+                  bigger then squart more....</td>
+                <td class="comment-font-2">23</td>
+                <td> 27/09/23</td>
+                <td>yellow13</td>
+              </tr>
+              <tr>
+                <td class="col-category"><a href="" tabindex="0">Sports</a></td>
+                <td><a href="" tabindex="0"><strong>ANYONE PLAY TABLE TENNIES </strong></a>hi, need a friend to play
+                  table tennis , best jun.......</td>
+                <td class="comment-font-2">13</td>
+                <td> 27/09/23</td>
+                <td>flower5</td>
+              </tr>
+              <tr>
+                <td class="col-category"><a href="" tabindex="0">Food</a></td>
+                <td><a href="" tabindex="0"><strong>fishoil is very important</strong></a>hello. guys, i find that fish
+                  oil is very helpful for body ......</td>
+                <td class="comment-font-2">9</td>
+                <td> 27/09/23</td>
+                <td>danny</td>
+              </tr>
+            </tbody>
+            <colgroup>
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+            </colgroup>
+          </table>
+
+        </section>
+      </div>
+    </div>
+
+    <script src="js/event.js"></script>
