@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
     </head>
+    <!-- back.jpg references from https://www.pexels.com-->
     <body background="media/back.jpg">
         <div class="flex-container">
             <header class="flex-header-menu header-menu" aria-label="header menu">
@@ -97,11 +98,17 @@
                 <a href="about.html" class="nav-link" aria-label="about us" tab-index="0">About</a>
         
             </footer>
+
             <div class="fitness-container">
-                <h1>Fitness Calculator</h1>
+              <div class="calory-picture">
+                <!--licensed from Adobe Stock-->
+                <img src="media/calorie2.jpg">
+              </div>
+                
                 <form id="calorie-form">
+                    <h1>Fitness Calculator</h1>
                     <label for="age">Age:</label>
-                    <input type="number" id="age" required>
+                    <input type="number" id="age" placeholder="1-99" required>
                     
                     <label for="gender">Gender:</label>
                     <select id="gender" required>
@@ -110,10 +117,10 @@
                     </select>
         
                     <label for="height">Height (in cm):</label>
-                    <input type="number" id="height" required>
+                    <input type="number" id="height" placeholder="100cm-220cm" required>
                 
                     <label for="weight">Weight (in kg):</label>
-                    <input type="number" id="weight" required>
+                    <input type="number" id="weight" placeholder="40kg-200kg" required>
                 
                     <label for="activitylevel">Activity Level:</label>
                     <select id="activitylevel" required>
@@ -122,12 +129,14 @@
                     </select>
                 
                     <button type="button" onclick="calculateCalories()">Calculate</button>
-                </form>
-                
-                <div id="result">
+
+                    <div id="result">
                     <em>Your data shows here</em>
 
                 </div>
+                </form>
+                
+                
             
                 <script src="js/fitnesstracker.js"></script>
             </div>

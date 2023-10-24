@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>   
 
 </head>
-
+<!-- back.jpg references from https://www.pexels.com-->
 <body background="media/back.jpg">
     <div class="flex-container">
         <header class="flex-header-menu header-menu" aria-label="header menu">
@@ -108,25 +108,26 @@
 
         </footer>
         <div class="enroll-form">
+            <!--licensed from Adobe Stock-->
+            <img src="media/enroll(1).jpg">
 <h1>Activity Enrollment</h1>
-            <p>If you are an organiser, fullfill the following form </p>
-        <div class="body-text">
-            
-        </div>
+            <p>If you are an organiser, fullfill the following form.</p>
+            <p> Note: you need to sumbit the form before three days</p>
+        
         <form  action="http://your_server_address/api/community_events/" method="post" id="eventForm">
             <div class="form-item">
                 <label for="name">Event Name:</label>
-                <input type="text" id="name" name="name" class="form-control" required>
+                <input type="text" id="name" name="name" placeholder="Event full name" class="form-control" required>
             </div>
 
             <div class="form-item">
                 <label for="location">Location:</label>
-                <input type="text" id="location" name="location" required>
+                <input type="text" id="location" name="location" placeholder="street Address" required>
             </div>
 
             <div class="form-item">
                 <label for="organizer">Organiser:</label>
-                <input type="text" id="organiser" name="organiser" required>
+                <input type="text" id="organiser" name="organiser" placeholder="Organiser name" required>
             </div>
 
             <div class="form-item">
@@ -155,11 +156,11 @@
             </div>
                 <div class="form-item">
                     <label for="description">Description:</label>
-                    <textarea id="description" name="Description" rows="4" required></textarea>
+                    <textarea id="description" name="Description" rows="4" placeholder="brief description" required></textarea>
                 </div>
                 <div class="form-item">
                     <label for="date_time">Date and time:</label>
-                    <input type="text" id="date_time" name="date_time" required>
+                    <input type="text" id="date_time" name="date_time" placeholder="09/24/2023" required>
                 </div>
                 <div class="form-item">
                     <label for="photo" id="photo-file-input-label" class="p-1">Add a photo(optional)</label>

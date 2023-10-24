@@ -1356,11 +1356,19 @@ table img {
   color: #000000;
   margin: 10px;
 }
-
+.calory-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calory-picture img {
+  width: 50%;
+  height:40%
+}
 #calorie-form {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 400px;
   height: 300px;
   font-weight: bolder;
   vertical-align: middle;
@@ -1387,7 +1395,7 @@ select {
   border: 1px solid #171ae6;
   background-color: #dfdbdb;
   padding: 50px;
-  margin-top: 100px;
+  margin-top: 50px;
   width: 300px;
 }
 
@@ -1402,6 +1410,7 @@ select {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .about-item h1 {
@@ -1416,6 +1425,9 @@ select {
   padding: 6px;
   border-radius: 9px;
   font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .about-item img {
@@ -1425,3 +1437,4 @@ select {
   box-shadow: 5px 5px 5px 5px #425059;
   margin-bottom: 10px;
 }
+
