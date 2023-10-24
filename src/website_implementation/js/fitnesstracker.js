@@ -1,3 +1,4 @@
+    // the API is referenced from https://rapidapi.com/malaaddincelik/api/fitness-calculator
     async function calculateCalories() {
     const age = document.getElementById("age").value;
     const gender = document.getElementById("gender").value;

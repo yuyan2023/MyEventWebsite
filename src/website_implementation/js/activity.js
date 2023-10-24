@@ -1,5 +1,5 @@
 
-
+// references from https://chat.openai.com/
 async function searchlist() {
     let table = document.getElementById('search-table');
     table.style.display = 'none';
