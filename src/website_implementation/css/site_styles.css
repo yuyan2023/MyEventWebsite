@@ -36,30 +36,18 @@ body {
   padding: 0px 4px 0px 4px;
 }
 
+/* footer menu for phone user by default*/
 .flex-footer-menu {
   display: flex;
-  /* Activating flexbox */
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  /* Vertically centering items */
   background-color: #131212;
   padding: 20px 0px;
-  /* Top and bottom padding */
   position: fixed;
-  /* Fixing footer to bottom */
   width: 100%;
   bottom: 0;
   font-size: 10px;
-}
-
-.header-links a {
-  padding: 0.5em;
-}
-
-.flex-footer-menu img {
-  width: 15px;
-  height: 15px;
 }
 
 .flex-header-menu {
@@ -69,6 +57,17 @@ body {
 .flex-aside-menu {
   display: none;
 }
+
+.flex-footer-menu img {
+  width: 15px;
+  height: 15px;
+}
+
+/* decrease navigation labels padding*/
+.header-links a {
+  padding: 0.5em;
+}
+
 
 /* home for phone */
 #header1 {
@@ -97,42 +96,33 @@ body {
 .content-description h1 {
   margin-top: 5px;
   font-size: 1.3em;
-  /* Adjust the size as needed */
   margin-bottom: 20px;
-  /* Space below the h1 */
   color: #1606fb;
 }
 
 .section {
   display: flex;
-
   align-items: center;
-  /* Aligns the items to the top */
   gap: 20px;
-  /* Provides space between the images container and text container */
   color: #1606fb;
 }
 
 .content-description img {
   width: 30px;
-  /* Adjust to your desired icon size */
   height: 30px;
 }
 
 .content-description a {
   font-size: 2em;
-  /* Adjust the size as needed */
   display: flex;
-  /* Makes the <em> elements block level for better spacing control */
   margin: 20px 0;
-  /* Adds spacing above and below the <em> elements */
   color: #1606fb;
 }
 
 .content-description p {
   font-size: 1em;
   margin-bottom: 20px;
-  /* Adds spacing between paragraphs */
+
 }
 
 .flex-main-content {
@@ -1231,6 +1221,7 @@ table img {
   min-height: 200vh;
 }
 
+/* header login references from www.openai.com */
 .header-login {
   gap: 10px;
   color: blue;
