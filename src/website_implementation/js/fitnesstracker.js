@@ -7,7 +7,7 @@
     const activitylevel = document.getElementById("activitylevel").value;
 
     const url = `https://fitness-calculator.p.rapidapi.com/dailycalorie?age=${age}&gender=${gender}&height=${height}&weight=${weight}&activitylevel=${activitylevel}`;
-    const options = {
+    const requestOptions = {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': 'a338b86333msh0ac563539d576f6p1d643bjsn80e803aa3ee7',
@@ -16,12 +16,12 @@
     };
 
     try {
-        const response = await fetch(url, options);
+        const response = await fetch(url, requestOptions);
         const result = await response.json();
-        document.getElementById("result").textContent = JSON.stringify(result);
+        document.getElementById("dataFetched").textContent = JSON.stringify(result);
     } catch (error) {
         console.error(error);
-        document.getElementById("result").textContent = 'Error fetching data.';
+        document.getElementById("dataFetched").textContent = 'sorry, something wrong,please try again';
     }
 }
 

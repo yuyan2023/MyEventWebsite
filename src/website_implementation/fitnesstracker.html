@@ -105,30 +105,30 @@
                 
                 <form id="calorie-form">
                     <h1>Fitness Calculator</h1>
-                    <label for="age">Age:</label>
+                    <label for="age" aria-label="age">Age:</label>
                     <input type="number" id="age" placeholder="1-99" required>
                     
-                    <label for="gender">Gender:</label>
+                    <label for="gender" aria-label="gender">Gender:</label>
                     <select id="gender" required>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                     </select>
         
-                    <label for="height">Height (in cm):</label>
+                    <label for="height" aria-label="height">Height (in cm):</label>
                     <input type="number" id="height" placeholder="100cm-220cm" required>
                 
-                    <label for="weight">Weight (in kg):</label>
+                    <label for="weight" aria-label="weight">Weight (in kg):</label>
                     <input type="number" id="weight" placeholder="40kg-200kg" required>
                 
-                    <label for="activitylevel">Activity Level:</label>
+                    <label for="activitylevel" aria-label="activitylevel">Activity Level:</label>
                     <select id="activitylevel" required>
                         <option value="level_1">Level 1</option>
                         <!-- Add other activity levels here -->
                     </select>
                 
-                    <button type="button" onclick="calculateCalories()">Calculate</button>
+                    <button type="button" aria-label="submit button" onclick="calculateCalories()">Calculate</button>
 
-                    <div id="result">
+                    <div id="dataFetched">
                     <em>Your data shows here</em>
 
                 </div>

@@ -1,5 +1,5 @@
 
-// references from https://chat.openai.com/
+
 async function searchlist() {
     let table = document.getElementById('search-table');
     table.style.display = 'none';
@@ -21,7 +21,8 @@ async function searchlist() {
         const eventDetails = document.getElementById("eventDetails");
         eventDetails.innerHTML = '';
         let tableHTML = '<table border="1"  class="table">' // Start the table
-
+        
+        // references from https://chat.openai.com/
         // Add table headers based on the image columns
         tableHTML += `
             <tr>

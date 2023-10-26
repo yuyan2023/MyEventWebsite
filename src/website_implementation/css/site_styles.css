@@ -1261,7 +1261,7 @@ table img {
   border-bottom: 1px solid var(--blue);
 }
 
-/* activities search list */
+/* pagination  */
 
 .pagination {
   display: flex;
